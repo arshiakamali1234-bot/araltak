@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AralManage | داشبورد مدیریتی — AralOne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Ar</span>
+      <span class="brand-name">AralOne</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">همه ماژول‌ها</a>
+    </nav>
+  </div>
+</header>
+
+<section class="module-hero">
+  <div class="wrap">
+    <div class="hero-index">داشبورد مدیریتی</div>
+    <h1 class="module-title">AralManage</h1>
+    <p class="module-lead">نمای کلی از KPIهای واقعی ثبت‌شده در تمام ماژول‌ها — به‌صورت زنده از پایگاه‌داده.</p>
+  </div>
+</section>
+
+<section class="module-body">
+  <div class="wrap">
+    <div class="kpi-grid" id="kpiGrid">
+      <p class="loading-note">در حال بارگذاری KPIها...</p>
+    </div>
+
+    <div class="panel-head" style="margin-top:56px;">
+      <div>
+        <h2>تعداد رکوردها به تفکیک ماژول</h2>
+        <p class="panel-sub">برای مشاهده و مدیریت جزئیات، روی هر ماژول کلیک کنید.</p>
+      </div>
+    </div>
+
+    <div class="module-grid" id="countGrid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© آرال‌تک — AralOne</span>
+    <span class="footer-dim">ساخته‌شده برای مدیریت هوشمند کارخانه</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="manage.js"></script>
+</body>
+</html>
