@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">ماژول | AralOne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Ar</span>
+      <span class="brand-name">AralOne</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">همه ماژول‌ها</a>
+      <a href="manage.html">داشبورد مدیریتی</a>
+    </nav>
+  </div>
+</header>
+
+<section class="module-hero">
+  <div class="wrap">
+    <div class="hero-index" id="moduleCode">ماژول</div>
+    <h1 class="module-title" id="moduleTitle">—</h1>
+    <p class="module-lead" id="moduleDesc">—</p>
+  </div>
+</section>
+
+<section class="module-body">
+  <div class="wrap">
+
+    <div class="panel-head">
+      <div>
+        <h2 id="recordCountLabel">رکوردها</h2>
+        <p class="panel-sub">داده‌ها به‌صورت واقعی روی سرور ذخیره می‌شوند.</p>
+      </div>
+      <button class="btn-primary" id="openAddBtn">+ افزودن رکورد</button>
+    </div>
+
+    <div id="tableWrap" class="table-wrap">
+      <p class="loading-note">در حال بارگذاری...</p>
+    </div>
+  </div>
+</section>
+
+<!-- مودال فرم افزودن/ویرایش -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modalTitle">افزودن رکورد</h3>
+      <button class="modal-close" id="modalCloseBtn">✕</button>
+    </div>
+    <form id="recordForm" class="record-form"></form>
+    <div class="modal-errors" id="modalErrors"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn-ghost" id="cancelBtn">انصراف</button>
+      <button type="submit" form="recordForm" class="btn-primary" id="submitBtn">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© آرال‌تک — AralOne</span>
+    <span class="footer-dim">ساخته‌شده برای مدیریت هوشمند کارخانه</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="module.js"></script>
+</body>
+</html>
